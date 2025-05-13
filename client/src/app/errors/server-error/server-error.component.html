@@ -1,0 +1,14 @@
+<h4>Internal Server Error</h4>
+@if (error){
+<h5 class="text-danger">Error: {{ error.message }}</h5>
+<p class="font-weight-bold">It's Skill issues on backend part!</p>
+<p>What to do next?</p>
+<p>If we would know, You wouldn't see this message. Sorry!</p>
+@if (error.details){
+<h5>Stack Trace</h5>
+<div style="background-color: whitesmoke">
+  <code class="mt-5" style="background-color: whitesmoke">{{
+    error.details
+  }}</code>
+</div>
+} }
